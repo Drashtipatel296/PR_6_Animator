@@ -69,7 +69,7 @@ class _LikeScreenState extends State<LikeScreen> {
                         MaterialPageRoute(builder: (context) => DetailScreen(planet: planet)),
                       );
                     },
-                    leading: Container(
+                    leading: SizedBox(
                       height: 60,
                       width: 60,
                       child: Image.asset(planet.image),
@@ -77,7 +77,7 @@ class _LikeScreenState extends State<LikeScreen> {
                     title: Text(
                       planet.name,
                       style: GoogleFonts.poppins(
-                          color: Colors.white, fontWeight: FontWeight.bold, fontSize: 25),
+                          color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22),
                     ),
                     subtitle: Text(planet.planetType,
                         style: GoogleFonts.poppins(color: Colors.grey)),

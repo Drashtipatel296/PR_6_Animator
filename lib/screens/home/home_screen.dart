@@ -85,7 +85,7 @@ class _HomeScreenState extends State<HomeScreen>
                   itemHeight: 750.0,
                   layout: SwiperLayout.TINDER,
                   pagination: const SwiperPagination(
-                    margin: EdgeInsets.only(bottom: 30),
+                    margin: EdgeInsets.only(bottom: 15),
                     builder: DotSwiperPaginationBuilder(
                       space: 3,
                       activeColor: Colors.white,
@@ -110,13 +110,14 @@ class _HomeScreenState extends State<HomeScreen>
                           child: Stack(
                             children: [
                               Container(
-                                margin: EdgeInsets.only(top: 190),
+                                height: 500,
+                                margin: EdgeInsets.only(top: 140),
                                 decoration: BoxDecoration(
                                   color: Color(0xff29272A),
                                   borderRadius: BorderRadius.circular(25),
                                 ),
                                 child: Padding(
-                                  padding: const EdgeInsets.all(16.0),
+                                  padding: const EdgeInsets.all(15.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.min,
                                     crossAxisAlignment:
@@ -158,14 +159,14 @@ class _HomeScreenState extends State<HomeScreen>
                               ),
                               Positioned(
                                 right: 0,
-                                bottom: 310,
+                                bottom: 340,
                                 child: RotationTransition(
                                   turns: _controller,
                                   child: Hero(
                                     tag: planet.hero,
                                     child: Container(
-                                      height: 320,
-                                      width: 350,
+                                      height: 300,
+                                      width: 340,
                                       decoration: BoxDecoration(
                                         shape: BoxShape.circle,
                                         image: DecorationImage(

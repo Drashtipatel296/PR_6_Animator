@@ -60,7 +60,7 @@ class _DetailScreenState extends State<DetailScreen> with SingleTickerProviderSt
           ),
           SingleChildScrollView(
             child: Padding(
-              padding: const EdgeInsets.only(top: 20, left: 15, right: 15),
+              padding: const EdgeInsets.only(left: 15, right: 15),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -69,7 +69,7 @@ class _DetailScreenState extends State<DetailScreen> with SingleTickerProviderSt
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const SizedBox(height: 320),
+                          const SizedBox(height: 290),
                           Row(
                             children: [
                               Text(
@@ -77,7 +77,7 @@ class _DetailScreenState extends State<DetailScreen> with SingleTickerProviderSt
                                 overflow: TextOverflow.ellipsis,
                                 style: GoogleFonts.poppins(
                                   fontWeight: FontWeight.bold,
-                                  fontSize: 58,
+                                  fontSize: 55,
                                   color: Colors.white,
                                 ),
                               ),
